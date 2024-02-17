@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Batman</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <!-- Cabeçalho do site-->
+    <header>
+        <img id="logo" src="./logo batman.jpg" />
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="fotos.html">
+                    <li>Fotos</li>
+                </a>
+                <a href="contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="comentarios.html">
+                    <li>Comentários</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="contacts-geral">
+        <h2 style="color: #fff; font-family: 'Kdam thmor Pro', sans-serif;">Curtiu o filme? Comente!</h2>
+        
+    
+        <div class="contacts-container">
+          <!-- https://github.com/dwyl/html-form-send-email-via-google-script-without-server -->
+          <form action="https://script.google.com/macros/s/AKfycbzwr5wrIL9yQUw3Lh83wjqIw05peunLi-iUHiNVMgQ9WgXbj3AM/exec" class="row" method="post">
+            <div class="contacts-form">
+              <div class="input-control">
+                <input id="contact-info" name="nome" type="text" required placeholder="Seu nome">
+                <label for="nome">Nome*</label>
+              </div>
+              <div class="input-control">
+                <input id="contact-info" name="email" type="email" required placeholder="Seu e-mail">
+                <label for="email">Email*</label>
+              </div>
+              <div class="input-control">
+                <input id="contact-info" name="telefone" type="number" placeholder="Seu telefone">
+                <label for="telefone">Telefone</label>
+              </div>
+            </div>
+            <div class="col col-desktop-6 col-6">
+              <div class="input-control">
+                <textarea id="contact-text" name="mensagem" id="" cols="30" rows="10" placeholder="Conte-nos o que achou do filme!"></textarea>
+                <label for="mensagem">Telefone</label>
+              </div>
+            </div>
+            <div>
+              <button class="contact-button">Enviar</button>
+            </div>
+          </form>
+        </div>
+    
+      </section>
+      
+    <!-- Rodapé-->
+    <footer>
+        <img style="object-fit: contain"; id="logo" src="./logo batman.jpg"/>
+        <span>Todos os direitos reservados ©</span>
+        <span>Desenvolvido por: Gabriel Junqueira</span>
+        <span>Este é meu primeiro projeto! - HTML/CSS</span>
+
+        <nav class="footer-navigation">
+            <ul class="footer-list">
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="fotos.html">
+                    <li>Fotos</li>
+                </a>
+                <a href="contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="comentarios.html">
+                    <li>Comentários</li>
+                </a>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

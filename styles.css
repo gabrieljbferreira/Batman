@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+/* Página INDEX - Início */
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+    
+}
+
+#banner {
+    background-image: url('https://pbs.twimg.com/media/FBwMEAMWQAA6BOO.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    margin-top: 5px;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Kdam thmor Pro', sans-serif;
+    width: 70%;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #d21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://s2-techtudo.glbimg.com/uDBr3fWsGCSVhsD40IRwth6ltto=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/5/2/JhbDZXSN67wjcAqFLALQ/robert-pattinson-811119484f574723885b5bfbb109f749.jpg');
+}
+
+.banner-2 {
+    background-image: url('https://media.glamour.com/photos/621f8726f2ac62a619aea11e/master/w_2560%2Cc_limit/1375550203');
+}
+
+.banner-3 {
+    background-image: url('https://sm.ign.com/ign_pt/news/t/the-batman/the-batman-jeffrey-wright-coy-on-if-gordon-is-commissioner-p_hrek.jpg');
+}
+
+/* Página INDEX - FIM */
+
+/* Rodapés - Início */
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+    /* Esse display irá aparecer na responsividade (media query) somente */
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Rodapés - FIM */
+
+/* Página de FOTOS - Início */
+.photos-container.geral {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.photos-content {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    row-gap: 15px;
+    column-gap: 25px;
+    margin-left: 20px;
+}
+
+.photo {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+}
+
+.pic-1 {
+    background-image: url('https://f.i.uol.com.br/fotografia/2022/03/03/1646335024622114306180b_1646335024_3x2_xl.jpg');
+}
+
+.pic-2 {
+    background-image: url('https://www.tribunapr.com.br/wp-content/uploads/sites/56/2022/02/28121731/rev-1-TBM-11721r_High_Res_JPEG-970x550.jpeg');
+}
+
+.pic-3 {
+    background-image: url('https://cinemacao.com/wp-content/uploads/2022/03/batman-2-1130x590.jpg.webp');
+}
+
+.pic-4 {
+    background-image: url('https://static.wixstatic.com/media/abc13f_42820ed7a57e4f3cb207ad68a7e76901~mv2.jpg/v1/fill/w_640,h_288,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/abc13f_42820ed7a57e4f3cb207ad68a7e76901~mv2.jpg');
+}
+
+.pic-5 {
+    background-image: url('https://www.cinemaescrito.com/wp-content/uploads/2022/03/the-batman-scaled.jpg');
+}
+
+.pic-6 {
+    background-image: url('https://quilombogeek.files.wordpress.com/2022/04/20220309-ovicio-batman-dc-filme-poster-internacional.jpg?w=1300&h=768&crop=1');
+}
+
+.pic-7 {
+    background-image: url('https://1.bp.blogspot.com/-xV4mB-GN8WQ/X3ychK8FieI/AAAAAAAAYlI/9HkE-gTq7B4rC5ARnTzzO0LQSE0eGLf3gCLcBGAsYHQ/s768/robert-pattinson-the-batman-warner-bros.jpg')
+}
+
+.pic-8 {
+    background-image: url('https://rollingstone.uol.com.br/media/uploads/ator_robert_pattinson_como_batman_em_filme_de_matt_reeves_foto_reproducao.png')
+}
+
+.pic-9 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ08CGo0F-pLeZ2lDhIL5MCUGRzLLfqz5lIGQurCxDP_lfOkNCAW8W76F-MsBTuHDemYCA&usqp=CAU')
+}
+/* Fim da Página FOTOS */
+
+/* CONTATOS - Início */ 
+
+.contacts-geral {
+    width: 800px;
+    display: block;
+    margin: 50px 30%;
+    align-items: center;
+        
+}
+
+.contacts-container {
+    width: auto;
+    height: 400px;
+    margin: 5px 0 5px 0; 
+    font-family: 'Kdam thmor Pro', sans-serif;         
+}
+
+.contact-button {
+    width: 200px;
+    height: 60px;
+    background-color: #d21617;
+    color: #fff;
+    padding: 3px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;    
+}
+
+.contact-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+#contact-info {
+    color: #fff;
+    width: 300px;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+#contact-text {
+    width: 500px;
+    font-family: 'Kdam thmor Pro', sans-serif;
+    color: #fff;
+}
+
+
+/*Responsividade - INÍCIO */
+@media(max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 40%;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+
+    .photos-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}
+/*Responsividade - FINAL */
